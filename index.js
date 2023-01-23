@@ -4,16 +4,15 @@ const portNumber = 3003;
 
 // app.listen(arg, arg2);
 
-app.listen(() => {
+app.listen(portNumber, () => {
     console.log(`Visit http://localhost:${portNumber} to view output`);
-}, portNumber);
-
+});
 
 app.get('/', (req, resp) => {
     console.log('hello');
     resp.send('Hello world!');
 });
-    
+
 
 
 
